@@ -1,0 +1,11 @@
+﻿people文件保存方法
+[People.csv]
+[一行一人，一空一种信息] m_Name  m_Age sex(男/女)  address
+
+problem文件保存方法
+[File1 : 文化提问]
+[CulturalPro.csv]
+m_CulturalPro[一空一行一题]
+[File2：命题舞蹈]
+[DancePro.csv]
+m_DancePro[一空一行一题]

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FinishDialog</class>
+ <widget class="QDialog" name="FinishDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>439</width>
+    <height>248</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>比赛信息统计</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0" colspan="2">
+    <widget class="QComboBox" name="comboBox">
+     <item>
+      <property name="text">
+       <string>查看各选手成绩和基本信息</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>查看文化提问得分统计</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>查看命题舞蹈得分统计</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QTableWidget" name="tableWidgetPeople">
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <column>
+      <property name="text">
+       <string>姓名</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>年龄</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>性别</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>地址</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>独舞成绩</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>文化提问成绩</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>命题舞蹈成绩</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>总成绩</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QTableWidget" name="tableWidgetCulPro">
+     <column>
+      <property name="text">
+       <string>问题</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>最低分</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>平均分</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>最高分</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <widget class="QTableWidget" name="tableWidgetDanPro">
+     <column>
+      <property name="text">
+       <string>题目</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>最低分</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>平均分</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>最高分</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="2">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>118</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>确定</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>FinishDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>155</x>
+     <y>218</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>122</x>
+     <y>218</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
